@@ -1,0 +1,30 @@
+<a href="/">Home</a>
+<a href="/directors/">Directors</a>
+<a href="/actors/">Actors</a>
+<a href="/movies/">Movies</a>
+
+<h1>Edit Director Information</h1>
+
+<form action="/directors/update/<%= @director.id %>">
+  <div>
+    <label for="director_name">Name:</label>
+    <input id="director_name" type="string" name="new_name" value="<%= @director.name %>">
+  </div>
+  <div>
+    <label for="director_bio">Biography:</label>
+    <textarea id="director_bio" name="new_bio" rows=5 cols=30><%= @director.bio %></textarea>
+  </div>
+  <div>
+    <label for="director_dob">Date of Birth:</label>
+    <input id="director_dob" type="string" name="new_dob" value="<%= @director.dob %>">
+  </div>
+  <div>
+    <label for="director_image">Image URL:</label>
+    <input id="director_image" type="text" name="new_image_url" value="<%= @director.image_url %>">
+  </div>
+  <div>
+    <button>Update Director Information</button>
+  </div>
+</form>
+
+<a href="/directors">Back to Directors</a>

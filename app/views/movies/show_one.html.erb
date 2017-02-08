@@ -1,0 +1,30 @@
+<a href="/">Home</a>
+<a href="/directors/">Directors</a>
+<a href="/actors/">Actors</a>
+<a href="/movies/">Movies</a>
+
+<h1>
+  Movie Details
+</h1>
+
+<h2>
+  <%= @movie.title %> (<%= @movie.year %>)
+</h2>
+
+<img src="<%= @movie.image_url %>">
+
+<h2>
+  Duration: <%= @movie.duration %> minutes
+</h2>
+
+<h2>
+  Description:
+</h2>
+
+<p>
+  <%= @movie.description %>
+</p>
+
+<a href="/movies">Back</a>
+<a href="/movies/edit/<%= @movie.id %>">Edit</a>
+<a href="/delete_movie/<%= @movie.id %>">Delete</a>

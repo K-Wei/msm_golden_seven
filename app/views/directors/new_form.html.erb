@@ -1,0 +1,30 @@
+<a href="/">Home</a>
+<a href="/directors/">Directors</a>
+<a href="/actors/">Actors</a>
+<a href="/movies/">Movies</a>
+
+<h1>Add a New Director</h1>
+
+<form action="/directors/add">
+  <div>
+    <label for="director_name">Name:</label>
+    <input id="director_name" type="string" name="add_name">
+  </div>
+  <div>
+    <label for="director_bio">Biography:</label>
+    <textarea id="director_bio" name="add_bio" rows=5 cols=30></textarea>
+  </div>
+  <div>
+    <label for="director_dob">Date of Birth:</label>
+    <input id="director_dob" type="string" name="add_dob">
+  </div>
+  <div>
+    <label for="director_image">Image URL:</label>
+    <input id="director_image" type="text" name="add_image_url">
+  </div>
+  <div>
+    <button>Add Director Information</button>
+  </div>
+</form>
+
+<a href="/directors">Back to Directors</a>

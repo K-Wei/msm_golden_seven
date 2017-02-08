@@ -1,0 +1,34 @@
+<a href="/">Home</a>
+<a href="/directors/">Directors</a>
+<a href="/actors/">Actors</a>
+<a href="/movies/">Movies</a>
+
+<h1>Edit Movie Information</h1>
+
+<form action="/movies/update/<%= @movie.id %>">
+  <div>
+    <label for="movie_title">Title:</label>
+    <input id="movie_title" type="string" name="new_title" value="<%= @movie.title %>">
+  </div>
+  <div>
+    <label for="movie_year">Year:</label>
+    <input id="movie_year" type="string" name="new_year" value="<%= @movie.year %>">
+  </div>
+  <div>
+    <label for="movie_duration">Duration:</label>
+    <input id="movie_duration" type="string" name="new_duration" value="<%= @movie.duration %>">
+  </div>
+  <div>
+    <label for="movie_desc">Description:</label>
+    <textarea id="movie_desc" name="new_description" rows=5 cols=30><%= @movie.description %></textarea>
+  </div>
+  <div>
+    <label for="movie_image">Image URL:</label>
+    <input id="movie_image" type="text" name="new_image_url" value="<%= @movie.image_url %>">
+  </div>
+  <div>
+    <button>Edit Movie Information</button>
+  </div>
+</form>
+
+<a href="/movies">Back to Movies</a>

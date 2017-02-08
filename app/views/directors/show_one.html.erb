@@ -1,0 +1,30 @@
+<a href="/">Home</a>
+<a href="/directors/">Directors</a>
+<a href="/actors/">Actors</a>
+<a href="/movies/">Movies</a>
+
+<h1>
+  Director Details
+</h1>
+
+<h2>
+  <%= @director.name %>
+</h2>
+
+<img src="<%= @director.image_url %>">
+
+<h2>
+  Date of Birth: <%= @director.dob %>
+</h2>
+
+<h2>
+  Biography:
+</h2>
+
+<p>
+  <%= @director.bio %>
+</p>
+
+<a href="/directors">Back</a>
+<a href="/directors/edit/<%= @director.id %>">Edit</a>
+<a href="/delete_director/<%= @director.id %>">Delete</a>
